@@ -1,0 +1,226 @@
+.home-page {
+  padding-bottom: 40px;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #f9f5f0;
+  padding: 60px 0;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 24px;
+  max-width: 500px;
+}
+
+.search-container {
+  display: flex;
+  max-width: 500px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px 0 0 8px;
+  font-size: 1rem;
+}
+
+.search-button {
+  padding: 12px 24px;
+  background-color: #ff4500;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #e03e00;
+}
+
+.hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Featured Section */
+.featured-section {
+  padding: 60px 0;
+}
+
+.cuisine-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.cuisine-button {
+  padding: 8px 16px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cuisine-button:hover {
+  background-color: #eaeaea;
+}
+
+.cuisine-button.active {
+  background-color: #ff4500;
+  color: white;
+  border-color: #ff4500;
+}
+
+.restaurants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+/* How It Works Section */
+.how-it-works-section {
+  padding: 60px 0;
+  background-color: #f9f5f0;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.step {
+  text-align: center;
+  padding: 20px;
+}
+
+.step-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.step-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.step-description {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* App Promo Section */
+.app-promo-section {
+  padding: 60px 0;
+}
+
+.app-promo-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.app-promo-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app-promo-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 24px;
+  max-width: 500px;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.app-button {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.app-button:hover {
+  background-color: #222;
+}
+
+.app-button-icon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.app-promo-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-promo-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .hero-container,
+  .app-promo-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+

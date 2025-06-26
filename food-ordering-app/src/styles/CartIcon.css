@@ -1,0 +1,29 @@
+.cart-icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-icon {
+  width: 24px;
+  height: 24px;
+  color: #333;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ff4500;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
